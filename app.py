@@ -8,8 +8,8 @@ from src.cluster_face import Clustering
 # Downloading youtube video via the link
 
 if __name__ == '__main__':
-    os.mkdir('video')
-    youtube_video = YoutubeDownloader("https://www.youtube.com/watch?v=mnAnZmryS5o", "video/")
+    
+    youtube_video = YoutubeDownloader("https://www.youtube.com/watch?v=mnAnZmryS5o", "video_data/")
     youtube_video.download_url()
 
     cluster = Clustering()
