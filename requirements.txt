@@ -1,0 +1,5 @@
+pytube
+mtcnn
+numpy
+opencv-python
+scikit-learn
