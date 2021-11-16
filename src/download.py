@@ -1,4 +1,5 @@
 # Downloads the YouTube video and stores it in thedefined folder.
+import os
 import logging
 from pytube import YouTube
 
@@ -19,6 +20,7 @@ class YoutubeDownloader:
         video = yt.streams.get_highest_resolution()
         
         logger.info('Downloading...')
+        os.mkdir('video_data')
         video.download(self.filepath)
         logger.info('Download Complete')
 

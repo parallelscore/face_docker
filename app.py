@@ -1,3 +1,4 @@
+import os
 from src.download import YoutubeDownloader
 from src.face_extraction import ExtractFace
 
@@ -7,7 +8,8 @@ from src.cluster_face import Clustering
 # Downloading youtube video via the link
 
 if __name__ == '__main__':
-    youtube_video = YoutubeDownloader("https://www.youtube.com/watch?v=mnAnZmryS5o", "C:/Users/USER/Desktop/Parallel_Score/video_data")
+    os.mkdir('video')
+    youtube_video = YoutubeDownloader("https://www.youtube.com/watch?v=mnAnZmryS5o", "video/")
     youtube_video.download_url()
 
     cluster = Clustering()
