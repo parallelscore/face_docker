@@ -2,7 +2,7 @@
 
 INFO:
 Date: 30, NOV 2021
-Programming Language: Python 3. 7
+Programming Language: Python 3
 Main Script: extract-face.Python
 Docker Base Image: orgoro/dlib-opencv-python
 
