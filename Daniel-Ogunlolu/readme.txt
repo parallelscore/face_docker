@@ -36,4 +36,4 @@ of the faces appeared blurry (and very small).
 Tested the program with a diffrent video which has a better quality (faces were more vivid and clear) 
 and the program worked well.
 
-I have attached a zip files containing the detections.
+I have attached a zip files containing the final result (unique-faces)
