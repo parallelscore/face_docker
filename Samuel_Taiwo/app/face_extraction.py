@@ -34,6 +34,7 @@ cap = cv2.VideoCapture(video_path)
 
 unique_faces = {}  # list to store unique faces
 
+print (f"------ Running analysis on video ------")
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
@@ -80,4 +81,5 @@ while cap.isOpened():
             unique_faces[filename] = encodings[i]
 
 cap.release()
+print (f"------ Saved all unique faces to unique folder ------")
 
