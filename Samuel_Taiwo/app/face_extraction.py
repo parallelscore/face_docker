@@ -14,6 +14,11 @@ import face_recognition
 ROOT_DIR = os.getcwd()
 sys.path.insert(0, ROOT_DIR)
 
+## Download video
+from app.commons import download_yt_video
+url = "https://www.youtube.com/watch?v=JriaiYZZhbY&t=4s"
+download_yt_video(url)
+
 output_folder = os.path.join(ROOT_DIR, "unique_faces")
 video_path = os.path.join(ROOT_DIR, "video.mp4")
 
