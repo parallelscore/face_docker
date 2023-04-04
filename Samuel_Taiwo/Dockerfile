@@ -18,4 +18,6 @@ WORKDIR $INSTALL_PATH
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-CMD ["python3", "face_extraction.py"]
+COPY . .
+
+CMD ["python3", "app/face_extraction.py"]
