@@ -49,4 +49,4 @@ After 10 seconds worth of video content (1500 frames) have been processed, here 
 ### Note: Most of the faces appear to be blurry due to:
 1. The fast motion of the camera.
 2. The faces of the audience are small (distant in most cases).
-3. Motion from the players.
+3. Fast motion of the players.
