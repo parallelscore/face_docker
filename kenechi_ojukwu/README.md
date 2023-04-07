@@ -1,6 +1,8 @@
 # Face Detector
 
-Solution Repository for the Task of detecting faces in the provided video link.
+Solution Repository for the task of detecting faces in the provided youtube video link.
+
+A built docker image of the face detector application can be found here: ```kenechi/face-detector:v.2```
 
 ### Repository Breakdown:
 
@@ -17,7 +19,7 @@ Solution Repository for the Task of detecting faces in the provided video link.
 
     ```docker build -t face-detector .```
     
-2. After successful build: run the application with:
+2. After successful build: run the application:
 
    using your git terminal on a windows system:
 
@@ -37,11 +39,14 @@ Solution Repository for the Task of detecting faces in the provided video link.
 6. ```--cli_display```: bool value, if True, it displays the progress of the application as it runs. Default: False
 
 
-### Note:
-The provided video is 17 minutes 42 seconds long, in terms of video frames, it contains 26,555 frames. Were there are 25 frames per second.
-If using the skip functionality with default settings, the stated number of frames is reduced to 13,250 frames, resulting to approximately 8 mintues worth of content.
+### Observation:
+The provided video is 17 minutes 42 seconds long, in terms of video frames, it contains 26,555 frames, were there are 25 frames per second.
+If using the skip functionality with default settings, the stated number of frames is reduced to 13,250 frames, resulting to approximately 8 mintues worth of video content.
 The idea of video frame skipping is to reduce the overrall face extraction time when running on cpu.
 
 After 10 seconds worth of video content (1500 frames) have been processed, here is a link to the sample of faces extracted:[link](https://drive.google.com/drive/folders/1Ch_0POxseYeXZEUMrnXm4N7BXDFrOQ4H?usp=share_link).
 
-The faces appear to be blurry due to the high motion of both the players and the camera man.
+### Note: Most of the faces appear to be blurry due to:
+1. The fast motion of the camera man.
+2. The faces of the audience are small (distant in most cases).
+3. Motion from the players.
