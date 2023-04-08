@@ -10,16 +10,16 @@ class VideoHandler:
     Attributes
     ----------
     skip : str
-        string containing device type.E.g "cpu" or "cuda:0"
+         if true, reduce the number of video frames to reduce the overall face extraction time. Default: False
 
-    local_path : MTCNN Object
-        Contains the face detection module.
+    local_path : str
+        String containing the path to save video.
 
-    frame_skipper : DeepSort Object
-        Contains the deepsort module for object detection tracking.
+    frame_skipper : frameSkipper Object
+        Object used to skip frames, if needed.
 
-    video_path : Resnet Object
-        Contains the pre-trained Resnet model, used for face classification.
+    video_path : str
+        path to video file.
 
 
     Methods
