@@ -7,7 +7,7 @@ A built docker image of the face detector application can be found on docker hub
 ### Repository Breakdown:
 
  1. ```main.py```: This script contains the main function used to run the application.
- 2. ```detector.py```: This script contains the class used to detect and track the faces in the video.
+ 2. ```detector.py```: This script contains the class used to detect and track each unique face in the video.
  3. ```video_handler.py```: This script contains the class used to handle video download and frames extraction.
  4. ```utils/boundingbox_tools.py```: This is a utility script for handling bounding boxes.
  5. ```utils/video_frame_skipper.py```: This is a utility script used to skip video frames, if needed.
