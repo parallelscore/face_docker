@@ -44,7 +44,7 @@ The provided video is 17 minutes 42 seconds long, in terms of video frames, it c
 If using the skip functionality with default settings, the stated number of frames is reduced to 13,250 frames, resulting to approximately 8 mintues worth of video content.
 The idea of video frame skipping is to reduce the overrall face extraction time when running on cpu.
 
-After 10 seconds worth of video content (1500 frames) have been processed, here is a link to the sample of faces extracted: [link](https://drive.google.com/drive/folders/1Ch_0POxseYeXZEUMrnXm4N7BXDFrOQ4H?usp=share_link).
+After 10 seconds worth of video content (1500 frames) have been processed, here is a link to the sample of faces extracted: [link](https://drive.google.com/drive/folders/1Ch_0POxseYeXZEUMrnXm4N7BXDFrOQ4H?usp=share_link). The number associated with each image is the ID attached to a unique face.
 
 ### Note: Most of the faces appear to be blurry due to:
 1. The fast motion of the camera.
