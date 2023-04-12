@@ -1,12 +1,12 @@
 import os
-os.chdir("data") 
-imdir = 'faces'
+os.chdir("storage") 
+imgdir = 'faces'
 targetdir = "unique-faces"
-video_link = 'https://youtu.be/JriaiYZZhbY' #link to youtube video 
-number_clusters = 7 #number of cluster for unique face
-frame_skip = 5 #skip every fifth frame (makes the detection process faster)
+video_link = 'https://www.youtube.com/watch?v=JriaiYZZhbY&t=4s' #link to youtube video 
+number_clusters = 5 #number of cluster for unique face
+frame_skip = 3 #skip every fifth frame (makes the detection process faster)
 
-if not os.path.isdir(imdir):
+if not os.path.isdir(imgdir):
         os.mkdir("faces")
 if not os.path.isdir(targetdir):
         os.mkdir(targetdir)
@@ -118,9 +118,9 @@ images = []
 print("\n \n -------------------------------------------------------------------------------------------------------------------------------------------")
 print(" >>> Performing Face Clustering to detect unique faces in faces saved in faces directory")
 # Loop over files and get features
-filelist = os.listdir(imdir)
+filelist = os.listdir(imgdir)
 for i, m in enumerate(filelist):
-    filelist[i]= imdir + "/" + m
+    filelist[i]= imgdir + "/" + m
     images.append(cv2.imread(filelist[i]))
 featurelist = []
 for i, imagepath in enumerate(filelist):

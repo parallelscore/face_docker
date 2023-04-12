@@ -1,17 +1,17 @@
-------- Written by Daniel Ogunlolu --------
+------- Written by Daniel Ogunlolu and Adopted by Khalid-Yusuf-Liman --------
 
 INFO:
-Date: 30, NOV 2021
+Date: 11, April 2023
 Programming Language: Python 3
 Main Script: extract-face.Python
 Docker Base Image: orgoro/dlib-opencv-python
 
 ALGORITHM:
 1. Program starts by Downloading the given video from youtube link: 
-https://www.youtube.com/watch?v=JriaiYZZhbY
+https://www.youtube.com/watch?v=JriaiYZZhbY&t=4s
 2. Saves video inside directory (data/) with extension .mp4
 3. Run HOG face detection on each frame, all detections are saved in data/faces directory
-4. Finally, a Clustering process is performed on all faces to filter  unique faces
+4. Finally, a Clustering process is performed ( no of cluster is 5 and faces to skip is 3) on all faces to filter  unique faces
 5. Unique faces are saved in data/unique_faces directory
 6. When Program is done, enter q to end and exit the dockeer container
 
