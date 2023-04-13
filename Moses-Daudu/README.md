@@ -14,7 +14,10 @@ The code is reusable, meaning that you could use it for a particular youtube lin
 
 ## Run without Docker:
 
-Create virtual environment and install all requirements
+Create virtual environment and install requirements like below:
+`pip install cmake`
+`pip install dlib`
+
 `pip install -r requirements.txt`
 
 Run Python file

@@ -12,6 +12,8 @@ RUN python -m pip install --upgrade pip
 
 COPY . .
 
+RUN pip install cmake dlib
+
 RUN pip install -r requirements.txt
 
 ENTRYPOINT [ "python", "face_detect.py" ]
