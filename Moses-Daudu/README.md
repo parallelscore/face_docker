@@ -10,6 +10,8 @@ The algorithm takes the saved video and runs it through a custom model that was 
 
 It is important to mention that within the code, the sort algorithm already ensures that the same face is not given multiple IDs by increasing the max_age argument. This means that only unique IDs are captured, and in cases where the same face is given another ID, the face_recognition package ensures that those images are deleted.
 
+The code is reusable, meaning that you could use it for a particular youtube link and then use it with another youtube link. It ensures to run the latest video downloaded.
+
 ## Run without Docker:
 
 Create virtual environment and install all requirements
