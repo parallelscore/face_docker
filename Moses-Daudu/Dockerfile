@@ -10,13 +10,13 @@ RUN apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-d
 
 RUN python -m pip install --upgrade pip
 
-# RUN apt-get install qt5-default -y
-
 COPY . .
 
 RUN pip install -r requirements.txt
 
 ENTRYPOINT [ "python", "face_detect.py" ]
+
+# To run the docker file
 
 # docker build -t face_detect .
 # docker run face_detect --youtube="https://youtu.be/JriaiYZZhbY"
