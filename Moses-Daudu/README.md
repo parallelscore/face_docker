@@ -32,5 +32,5 @@ Run the dockerfile
 
 Check the `result` folder for the video recording and check the `images` folder for the Unique face images
 
-![Header](screen01.jpg)
-![Header](screen02.jpg)
+![Header](screen01.png)
+![Header](screen02.png)
